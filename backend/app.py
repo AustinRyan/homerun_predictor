@@ -52,8 +52,8 @@ class TeeIO(io.StringIO):
 app = Flask(__name__)
 app.json_encoder = NumpyEncoder  # Use our custom encoder for JSON responses
 
-# Configure CORS to allow all origins during troubleshooting
-CORS(app, origins="*", allow_headers=["Content-Type", "Authorization"], methods=["GET", "POST"], supports_credentials=True)  # Enable CORS for all origins
+# Configure CORS to allow requests from Vercel frontend
+CORS(app, resources={r"/*": {"origins": ["https://homerun-predictor.vercel.app", "http://localhost:3000", "http://localhost:5173"]}})  # Enable CORS for specific origins
 
 def make_json_serializable(data):
     if isinstance(data, dict):
