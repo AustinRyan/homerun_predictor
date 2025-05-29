@@ -60,7 +60,9 @@ function App() {
     setError(null);
     setPredictions([]);
 
-    const apiUrl = `http://127.0.0.1:5000/api/homerun_predictions/${date}/${limit}`;
+    // Use environment variable for API URL with local fallback
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
+    const apiUrl = `${apiBaseUrl}/api/homerun_predictions/${date}/${limit}`;
     const config = {
       limit: limit,
     };
@@ -130,7 +132,7 @@ function App() {
           // Ensure the last message is set, in case the interval clears slightly before the last update.
           setCurrentLoadingMessage(loadingMessages[loadingMessages.length - 1]);
         }
-      }, 3000); // Change message every 3 seconds
+      }, 4500); // Change message every 4.5 seconds
     } else {
       setCurrentLoadingMessage(''); // Clear message when not loading
       if (intervalId) {
