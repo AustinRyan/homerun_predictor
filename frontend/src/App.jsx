@@ -111,7 +111,7 @@ function App() {
     'Generating individual matchup likelihood scores...',    
     'Compiling and sorting final predictions...',    
     'Almost ready, just polishing the results!',
-    'Finalizing predictions... Hang tight!'
+    'Finalizing predictions... Hang tight this may take a few more minutes!'
   ];
 
   useEffect(() => {
