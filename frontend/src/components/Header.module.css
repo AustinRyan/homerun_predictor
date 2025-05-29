@@ -1,0 +1,35 @@
+.appHeader {
+  background: linear-gradient(135deg, #1a2a4a 0%, #2a4a6a 100%);
+  color: #e0e0e0;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #f39c12; /* Accent color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.appTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem; /* Increased font size */
+  font-weight: 700; /* Bold font weight */
+  color: #ffffff; /* Brighter title color */
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Subtle text shadow */
+}
+
+.appTitle svg {
+  margin-right: 0.75rem;
+  width: 36px; /* Increased icon size */
+  height: 36px;
+  color: #f39c12; /* Icon color matching accent */
+}
+
+.appSubtitle {
+  font-size: 1rem;
+  color: #bdc3c7; /* Softer subtitle color */
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}

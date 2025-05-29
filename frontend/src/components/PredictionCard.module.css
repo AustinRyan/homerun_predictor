@@ -1,0 +1,216 @@
+.card {
+  background-color: #2a3b4d; /* Darker card background */
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem; /* Increased padding */
+  margin-bottom: 1.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer, more pronounced shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden; /* For rank badge positioning */
+  border-left: 5px solid; /* Default border for theming */
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Border colors based on score */
+.borderHigh { border-left-color: #2ecc71; } /* Green for high scores */
+.borderMedium { border-left-color: #f1c40f; } /* Yellow for medium scores */
+.borderLow { border-left-color: #e74c3c; } /* Red for low scores */
+.borderNeutral { border-left-color: #3498db; } /* Blue for neutral/default */
+
+
+.rankBadge {
+  position: absolute;
+  top: -1px; /* Adjusted for better visual */
+  right: -1px; /* Adjusted for better visual */
+  background-color: #f39c12; /* Orange accent */
+  color: #1e2733; /* Dark text for contrast */
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 9px; /* Match card's radius */
+  box-shadow: -2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.matchup {
+  display: flex;
+  flex-direction: row; /* Display players side by side */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem; /* Slightly larger font for names */
+  color: #ecf0f1; /* Light text for names */
+  text-align: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.playerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 120px;
+  height: 160px; /* Fixed height to ensure consistent layout */
+}
+
+.playerImageContainer {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  background-color: #1a2533;
+  border: 2px solid #3a4b5c;
+}
+
+.playerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%; /* Show more of the full face */
+  transform: scale(1.05); /* Very slight enlargement */
+}
+
+.playerName {
+  font-weight: 600;
+  min-height: 2.5em; /* Ensure consistent height for names */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.batterName {
+  color: #82ccdd; /* Light blue for batter */
+}
+
+.pitcherName {
+  color: #f7cac9; /* Light pink for pitcher */
+}
+
+.vs {
+  margin: 0.25rem 0.5rem; /* Adjusted margin for vertical stacking */
+  font-weight: 300;
+  color: #7f8c8d; /* Muted 'vs' */
+  font-size: 0.9em;
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #bdc3c7; /* Lighter gray for team names */
+  margin-bottom: 0.75rem;
+}
+
+.teamName {
+  font-style: italic;
+}
+
+.teamSeparator {
+  margin: 0 0.5rem;
+  color: #7f8c8d;
+}
+
+.venue {
+  font-size: 0.95rem;
+  color: #95a5a6; /* Muted venue color */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.scoreContainer {
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle background for score */
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.scoreLabel {
+  font-size: 0.85rem;
+  color: #bdc3c7;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scoreValue {
+  font-size: 1.75rem; /* Larger score value */
+  font-weight: bold;
+  color: #ffffff; /* Bright white for score */
+  line-height: 1.2;
+}
+
+.bvpSection, .factorsSection {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #3e5062; /* Separator line */
+}
+
+.bvpTitle, .factorsTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #abb8c3; /* Slightly lighter title for subsections */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bvpStats {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+.bvpStats span {
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.factorsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  color: #bdc3c7;
+}
+
+.factorItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+  border-bottom: 1px dashed #34495e; /* Dashed separator for items */
+}
+.factorItem:last-child {
+  border-bottom: none;
+}
+
+.factorName {
+  text-transform: capitalize;
+  color: #a5b4fc; /* Light indigo for factor names */
+}
+
+.factorValue {
+  font-weight: 500;
+  color: #f0f0f0; /* Brighter value */
+}
+
+/* Responsive adjustments */
+@media (min-width: 500px) {
+  .matchup {
+    flex-direction: row; /* Horizontal layout for wider screens */
+  }
+  .vs {
+    margin: 0 0.75rem; /* Adjust spacing for horizontal layout */
+  }
+}

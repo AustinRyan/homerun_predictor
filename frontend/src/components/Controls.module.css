@@ -1,0 +1,100 @@
+.controlsSection {
+  background-color: #1f2937; /* Darker background for controls */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.controlsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.controlItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.controlItem label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #d1d5db; /* Light gray label text */
+}
+
+.inputField {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #4b5563; /* Gray border */
+  background-color: #374151; /* Darker input background */
+  color: #f3f4f6; /* Light input text */
+  font-size: 1rem;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #60a5fa; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+.toggleButtonContainer {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; /* Increased margin */
+  display: flex;
+  justify-content: center;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  min-width: 240px; /* Ensure buttons have a good minimum width */
+}
+
+.actionButton:hover {
+  transform: translateY(-1px);
+}
+
+.actionButton:active {
+  transform: translateY(0px);
+}
+
+.showButton {
+  background-color: #27ae60; /* Green */
+}
+.showButton:hover {
+  background-color: #229954;
+}
+
+.hideButton {
+  background-color: #c0392b; /* Red */
+}
+.hideButton:hover {
+  background-color: #a93226;
+}
+
+.refreshButton {
+  background-color: #3b82f6; /* Blue */
+}
+.refreshButton:hover {
+  background-color: #2563eb;
+}
+
+.refreshButton svg {
+  margin-right: 0.5rem;
+}
+
+.controlActions {
+  display: flex;
+  justify-content: center; /* Center the refresh button */
+}

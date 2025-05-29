@@ -1,0 +1,37 @@
+{
+  "weights": {
+    "batter_avg_launch_speed": -0.2,
+    "batter_ideal_launch_angle_rate": 2.0,
+    "batter_hard_hit_rate": 2.0,
+    "batter_home_run_rate_per_pa": 10.0,
+    "batter_iso": 10.0,
+    "batter_barrel_pct": 10.0,
+    "batter_sweet_spot_pct": 0.5,
+    "batter_exit_velo_consistency": 0.5,
+    "pitcher_avg_launch_speed_allowed": -0.5,
+    "pitcher_ideal_launch_angle_rate_allowed": 2.0,
+    "pitcher_hard_hit_rate_allowed": 1.5,
+    "pitcher_home_run_rate_allowed_per_pa": 10.0,
+    "pitcher_fip": 3.0,
+    "pitcher_barrel_pct_allowed": 10.0,
+    "pitcher_sweet_spot_pct_allowed": 0.5,
+    "pitcher_fly_ball_rate_allowed": 0.5,
+    "pitcher_ground_ball_rate_allowed": -0.2,
+    "handedness_advantage_bonus": 0.15
+  },
+  "metrics": {
+    "roc_auc": 0.5880357837570016,
+    "pr_auc": 0.09241284699178828,
+    "brier_score": 0.6726061260780476,
+    "best_threshold": 0.9481999999999999,
+    "best_f1": 0.1597733711048159,
+    "best_precision": 0.09675759135357695,
+    "best_recall": 0.45816409423233145
+  },
+  "period": {
+    "start_date": "2025-03-01",
+    "end_date": "2025-05-28"
+  },
+  "optimization_metric": "roc_auc",
+  "num_matchups": 17374
+}

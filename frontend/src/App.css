@@ -1,0 +1,438 @@
+/* MLB Home Run Predictor App Styles */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.app-header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #16213e;
+  border-bottom: 1px solid #30475e;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #3498db, #e74c3c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.app-subtitle {
+  color: #a0a0a0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Controls Section */
+.controls-section {
+  background-color: #16213e;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.control-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.control-item input, .control-item select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #30475e;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.control-item input:focus, .control-item select:focus, .control-item textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.25);
+}
+
+.control-item textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #30475e;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  min-height: 60px; /* Adjust as needed */
+  resize: vertical;
+}
+
+.control-item-full-width {
+  grid-column: 1 / -1;
+}
+
+.control-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.refresh-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.refresh-button:hover {
+  background-color: #2980b9;
+}
+
+.refresh-button svg {
+  margin-right: 0.5rem;
+}
+
+/* Tabs */
+.tabs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid #30475e;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  color: #ffffff;
+}
+
+.tab-button.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Prediction Cards */
+.predictions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.prediction-card {
+  background-color: #16213e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.prediction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.prediction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.batter-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.pitcher-info {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+}
+
+.prediction-score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.score-high {
+  color: #e74c3c;
+}
+
+.score-medium {
+  color: #f39c12;
+}
+
+.score-low {
+  color: #3498db;
+}
+
+.hr-likelihood {
+  margin-bottom: 1rem;
+}
+
+.likelihood-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  margin-bottom: 0.25rem;
+}
+
+.progress-container {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #3498db, #e74c3c);
+  transition: width 0.5s ease;
+}
+
+.prediction-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  margin-bottom: 0.5rem;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-weight: 500;
+}
+
+.stats-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #3498db;
+  border-bottom: 1px solid rgba(52, 152, 219, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.view-details-button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.view-details-button:hover {
+  color: #3498db;
+}
+
+/* Table View */
+.table-container {
+  overflow-x: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.predictions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.predictions-table th,
+.predictions-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #30475e;
+}
+
+.predictions-table th {
+  font-weight: 600;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.predictions-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Loading and Error States */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spinner-rotation 1s ease-in-out infinite;
+}
+
+@keyframes spinner-rotation {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.backend-logs {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  overflow: auto;
+}
+
+.backend-logs h4 {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.backend-logs pre {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #212529;
+  white-space: pre-wrap;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.error-container {
+  background-color: rgba(231, 76, 60, 0.2);
+  border: 1px solid #e74c3c;
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+}
+
+.error-help {
+  color: #a0a0a0;
+  font-size: 0.875rem;
+}
+
+/* Empty State */
+.empty-container {
+  background-color: #16213e;
+  border-radius: 8px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.empty-message {
+  color: #a0a0a0;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #30475e;
+}
+
+.footer-text {
+  color: #a0a0a0;
+  font-size: 0.875rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+  
+  .predictions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .prediction-details {
+    grid-template-columns: 1fr;
+  }
+}
+

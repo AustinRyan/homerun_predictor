@@ -1,0 +1,255 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #111827;
+  position: relative;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.resultsSection {
+  margin-top: 2rem;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: #1f2937;
+  border-radius: 8px;
+  padding: 0.5rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabs .tabButton {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.25rem;
+  border: none;
+  background-color: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tabs .tabButton:hover {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.tabs .tabButton.activeTab {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.predictionCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjusted minmax for slightly wider cards */
+  gap: 1.5rem;
+}
+
+.noPredictions {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #1f2937;
+  border-radius: 8px;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  margin-top: 1rem; /* Ensure space if activeTab is table */
+}
+
+.tableActions {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionButton {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.actionButton:hover {
+  background-color: #1a2533;
+}
+
+.predictionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.predictionsTable th,
+.predictionsTable td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #374151;
+  white-space: nowrap;
+}
+
+.predictionsTable th {
+  background-color: #374151;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.predictionsTable tbody tr:nth-child(even) {
+  background-color: #273142;
+}
+
+.predictionsTable tbody tr:hover {
+  background-color: #3b4a61;
+}
+
+/* Score cell styling for table */
+.tableScoreCellHigh { color: #4caf50; font-weight: bold; }
+.tableScoreCellMedium { color: #ffeb3b; }
+.tableScoreCellLow { color: #f44336; }
+.tableScoreCellDefault { color: #e0e0e0; }
+
+
+.appFooter {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  border-top: 1px solid #374151;
+  margin-top: 2rem;
+}
+
+/* Clickable cells in table */
+.clickableCell {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #60a5fa;
+  transition: color 0.2s;
+}
+
+.clickableCell:hover {
+  color: #93c5fd;
+}
+
+/* Player Stats Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #1f2937;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #374151;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f3f4f6;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  color: #f3f4f6;
+}
+
+.statSection {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 0.75rem;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.statItem {
+  background-color: #374151;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f3f4f6;
+}

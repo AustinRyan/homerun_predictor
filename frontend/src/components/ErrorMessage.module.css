@@ -1,0 +1,24 @@
+.errorContainer {
+  background-color: #ffebee; /* Light pink background for errors */
+  color: #c62828; /* Dark red text */
+  border: 1px solid #ef9a9a; /* Lighter red border */
+  border-left: 5px solid #c62828; /* Dark red left border for emphasis */
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto; /* Centered with margin */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  max-width: 800px; /* Max width for better readability */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.errorIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.errorMessage {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}

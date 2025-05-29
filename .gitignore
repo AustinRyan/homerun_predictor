@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE specific
+.vscode/
+.idea/
+
+# Node
+node_modules/
+dist/
+
+# Frontend build artifacts
+/frontend/dist
+/frontend/.DS_Store
+/frontend/node_modules
+
+# Misc
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Environment variables
+.env
+backend/.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Data files
+data/*

@@ -1,0 +1,814 @@
+{
+  "daily_results": [
+    {
+      "date": "2025-04-01",
+      "metrics": {
+        "roc_auc": 0.624123043712898,
+        "pr_auc": 0.1268876886309368,
+        "brier_score": 0.07111978545225532,
+        "best_threshold": 0.01,
+        "best_f1": 0.2469135802469136,
+        "best_precision": 0.15625,
+        "best_recall": 0.5882352941176471
+      },
+      "num_matchups": 235,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-04-02",
+      "metrics": {
+        "roc_auc": 0.6198125836680054,
+        "pr_auc": 0.11392296080621751,
+        "brier_score": 0.07642779685744075,
+        "best_threshold": 0.009742,
+        "best_f1": 0.2173913043478261,
+        "best_precision": 0.14084507042253522,
+        "best_recall": 0.47619047619047616
+      },
+      "num_matchups": 270,
+      "num_hrs": 21
+    },
+    {
+      "date": "2025-04-03",
+      "metrics": {
+        "roc_auc": 0.5678353658536586,
+        "pr_auc": 0.12372474747474747,
+        "brier_score": 0.08739655147077778,
+        "best_threshold": 0.009676,
+        "best_f1": 0.2272727272727273,
+        "best_precision": 0.1388888888888889,
+        "best_recall": 0.625
+      },
+      "num_matchups": 90,
+      "num_hrs": 8
+    },
+    {
+      "date": "2025-04-04",
+      "metrics": {
+        "roc_auc": 0.5004708097928436,
+        "pr_auc": 0.06929266382812863,
+        "brier_score": 0.06967387987233858,
+        "best_threshold": 0.008144,
+        "best_f1": 0.15458937198067632,
+        "best_precision": 0.08465608465608465,
+        "best_recall": 0.8888888888888888
+      },
+      "num_matchups": 254,
+      "num_hrs": 18
+    },
+    {
+      "date": "2025-04-05",
+      "metrics": {
+        "roc_auc": 0.5312287270251872,
+        "pr_auc": 0.10796466701206889,
+        "brier_score": 0.10141929207314286,
+        "best_threshold": 0.008131000000000001,
+        "best_f1": 0.20952380952380953,
+        "best_precision": 0.11956521739130435,
+        "best_recall": 0.8461538461538461
+      },
+      "num_matchups": 252,
+      "num_hrs": 26
+    },
+    {
+      "date": "2025-04-06",
+      "metrics": {
+        "roc_auc": 0.6354919399666481,
+        "pr_auc": 0.07299567533987437,
+        "brier_score": 0.05076517227230997,
+        "best_threshold": 0.009464,
+        "best_f1": 0.14400000000000002,
+        "best_precision": 0.08108108108108109,
+        "best_recall": 0.6428571428571429
+      },
+      "num_matchups": 271,
+      "num_hrs": 14
+    },
+    {
+      "date": "2025-04-07",
+      "metrics": {
+        "roc_auc": 0.6662234042553191,
+        "pr_auc": 0.09597071817290295,
+        "brier_score": 0.04965034454277777,
+        "best_threshold": 0.009337999999999999,
+        "best_f1": 0.18918918918918917,
+        "best_precision": 0.109375,
+        "best_recall": 0.7
+      },
+      "num_matchups": 198,
+      "num_hrs": 10
+    },
+    {
+      "date": "2025-04-08",
+      "metrics": {
+        "roc_auc": 0.5958251953125,
+        "pr_auc": 0.07883703332711164,
+        "brier_score": 0.05785384736777941,
+        "best_threshold": 0.008994,
+        "best_f1": 0.14184397163120568,
+        "best_precision": 0.08,
+        "best_recall": 0.625
+      },
+      "num_matchups": 272,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-04-09",
+      "metrics": {
+        "roc_auc": 0.6915364583333333,
+        "pr_auc": 0.10359063305615406,
+        "brier_score": 0.054405181685114386,
+        "best_threshold": 0.009728,
+        "best_f1": 0.19148936170212763,
+        "best_precision": 0.11392405063291139,
+        "best_recall": 0.6
+      },
+      "num_matchups": 271,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-04-10",
+      "metrics": {
+        "roc_auc": 0.6745049504950494,
+        "pr_auc": 0.1532110488446105,
+        "brier_score": 0.07211382685611928,
+        "best_threshold": 0.01,
+        "best_f1": 0.28571428571428575,
+        "best_precision": 0.2,
+        "best_recall": 0.5
+      },
+      "num_matchups": 109,
+      "num_hrs": 8
+    },
+    {
+      "date": "2025-04-11",
+      "metrics": {
+        "roc_auc": 0.5493137567826365,
+        "pr_auc": 0.05601164194247161,
+        "brier_score": 0.05033588468299607,
+        "best_threshold": 0.0077540000000000005,
+        "best_f1": 0.12807881773399016,
+        "best_precision": 0.06842105263157895,
+        "best_recall": 1.0
+      },
+      "num_matchups": 254,
+      "num_hrs": 13
+    },
+    {
+      "date": "2025-04-12",
+      "metrics": {
+        "roc_auc": 0.52099609375,
+        "pr_auc": 0.06340557733430718,
+        "brier_score": 0.057886781449378685,
+        "best_threshold": 0.007848,
+        "best_f1": 0.13023255813953488,
+        "best_precision": 0.07035175879396985,
+        "best_recall": 0.875
+      },
+      "num_matchups": 272,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-04-13",
+      "metrics": {
+        "roc_auc": 0.5114870509607352,
+        "pr_auc": 0.07285916872323224,
+        "brier_score": 0.06898039072313654,
+        "best_threshold": 0.007783,
+        "best_f1": 0.1511111111111111,
+        "best_precision": 0.0825242718446602,
+        "best_recall": 0.8947368421052632
+      },
+      "num_matchups": 271,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-04-14",
+      "metrics": {
+        "roc_auc": 0.6634087791495199,
+        "pr_auc": 0.22577017036597413,
+        "brier_score": 0.09836765977070555,
+        "best_threshold": 0.01,
+        "best_f1": 0.3928571428571429,
+        "best_precision": 0.2894736842105263,
+        "best_recall": 0.6111111111111112
+      },
+      "num_matchups": 180,
+      "num_hrs": 18
+    },
+    {
+      "date": "2025-04-15",
+      "metrics": {
+        "roc_auc": 0.5937663698271345,
+        "pr_auc": 0.1043514975620792,
+        "brier_score": 0.08309757454809927,
+        "best_threshold": 0.008754000000000001,
+        "best_f1": 0.20765027322404372,
+        "best_precision": 0.11875,
+        "best_recall": 0.8260869565217391
+      },
+      "num_matchups": 272,
+      "num_hrs": 23
+    },
+    {
+      "date": "2025-04-16",
+      "metrics": {
+        "roc_auc": 0.6413934426229506,
+        "pr_auc": 0.12870264224734754,
+        "brier_score": 0.07788034254004152,
+        "best_threshold": 0.01,
+        "best_f1": 0.22784810126582278,
+        "best_precision": 0.15517241379310345,
+        "best_recall": 0.42857142857142855
+      },
+      "num_matchups": 265,
+      "num_hrs": 21
+    },
+    {
+      "date": "2025-04-17",
+      "metrics": {
+        "roc_auc": 0.6711111111111111,
+        "pr_auc": 0.14623791773843065,
+        "brier_score": 0.08186359419894444,
+        "best_threshold": 0.009883,
+        "best_f1": 0.2545454545454546,
+        "best_precision": 0.175,
+        "best_recall": 0.4666666666666667
+      },
+      "num_matchups": 180,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-04-18",
+      "metrics": {
+        "roc_auc": 0.495244055068836,
+        "pr_auc": 0.06464569956011433,
+        "brier_score": 0.06636927892363888,
+        "best_threshold": 0.009198999999999999,
+        "best_f1": 0.14876033057851237,
+        "best_precision": 0.08653846153846154,
+        "best_recall": 0.5294117647058824
+      },
+      "num_matchups": 252,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-04-19",
+      "metrics": {
+        "roc_auc": 0.619265306122449,
+        "pr_auc": 0.12837212641988505,
+        "brier_score": 0.09098406382326296,
+        "best_threshold": 0.008140999999999999,
+        "best_f1": 0.22115384615384615,
+        "best_precision": 0.12568306010928962,
+        "best_recall": 0.92
+      },
+      "num_matchups": 270,
+      "num_hrs": 25
+    },
+    {
+      "date": "2025-04-20",
+      "metrics": {
+        "roc_auc": 0.5740142210730447,
+        "pr_auc": 0.08038392097571415,
+        "brier_score": 0.057685198955820687,
+        "best_threshold": 0.009873,
+        "best_f1": 0.16842105263157894,
+        "best_precision": 0.10256410256410256,
+        "best_recall": 0.47058823529411764
+      },
+      "num_matchups": 290,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-04-21",
+      "metrics": {
+        "roc_auc": 0.5937037037037037,
+        "pr_auc": 0.09180974196068759,
+        "brier_score": 0.0678344141545862,
+        "best_threshold": 0.009183,
+        "best_f1": 0.21875,
+        "best_precision": 0.12962962962962962,
+        "best_recall": 0.7
+      },
+      "num_matchups": 145,
+      "num_hrs": 10
+    },
+    {
+      "date": "2025-04-22",
+      "metrics": {
+        "roc_auc": 0.561795918367347,
+        "pr_auc": 0.11495399367147419,
+        "brier_score": 0.09104669584597036,
+        "best_threshold": 0.009284,
+        "best_f1": 0.20312500000000003,
+        "best_precision": 0.1262135922330097,
+        "best_recall": 0.52
+      },
+      "num_matchups": 270,
+      "num_hrs": 25
+    },
+    {
+      "date": "2025-04-23",
+      "metrics": {
+        "roc_auc": 0.6838235294117647,
+        "pr_auc": 0.12044359505606658,
+        "brier_score": 0.061939904940279525,
+        "best_threshold": 0.009890000000000001,
+        "best_f1": 0.2272727272727273,
+        "best_precision": 0.1388888888888889,
+        "best_recall": 0.625
+      },
+      "num_matchups": 254,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-04-24",
+      "metrics": {
+        "roc_auc": 0.41894682498709346,
+        "pr_auc": 0.07596897225549046,
+        "brier_score": 0.07906677220138272,
+        "best_threshold": 0.007347,
+        "best_f1": 0.15714285714285717,
+        "best_precision": 0.08661417322834646,
+        "best_recall": 0.8461538461538461
+      },
+      "num_matchups": 162,
+      "num_hrs": 13
+    },
+    {
+      "date": "2025-04-25",
+      "metrics": {
+        "roc_auc": 0.7712389380530973,
+        "pr_auc": 0.050439913470231176,
+        "brier_score": 0.02130016322632468,
+        "best_threshold": 0.009236,
+        "best_f1": 0.09900990099009901,
+        "best_precision": 0.052083333333333336,
+        "best_recall": 1.0
+      },
+      "num_matchups": 231,
+      "num_hrs": 5
+    },
+    {
+      "date": "2025-04-26",
+      "metrics": {
+        "roc_auc": 0.6774064438663198,
+        "pr_auc": 0.12088917855952279,
+        "brier_score": 0.06622084643156027,
+        "best_threshold": 0.009106000000000001,
+        "best_f1": 0.21705426356589141,
+        "best_precision": 0.12727272727272726,
+        "best_recall": 0.7368421052631579
+      },
+      "num_matchups": 282,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-04-27",
+      "metrics": {
+        "roc_auc": 0.5506918238993711,
+        "pr_auc": 0.08691749185228642,
+        "brier_score": 0.052732085186407145,
+        "best_threshold": 0.01,
+        "best_f1": 0.19718309859154928,
+        "best_precision": 0.125,
+        "best_recall": 0.4666666666666667
+      },
+      "num_matchups": 280,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-04-28",
+      "metrics": {
+        "roc_auc": 0.575,
+        "pr_auc": 0.09238891076607661,
+        "brier_score": 0.06732134695421231,
+        "best_threshold": 0.01,
+        "best_f1": 0.1724137931034483,
+        "best_precision": 0.10416666666666667,
+        "best_recall": 0.5
+      },
+      "num_matchups": 146,
+      "num_hrs": 10
+    },
+    {
+      "date": "2025-04-29",
+      "metrics": {
+        "roc_auc": 0.7047561813186812,
+        "pr_auc": 0.21156578071629076,
+        "brier_score": 0.11650111147644068,
+        "best_threshold": 0.009510999999999999,
+        "best_f1": 0.3275862068965517,
+        "best_precision": 0.2159090909090909,
+        "best_recall": 0.6785714285714286
+      },
+      "num_matchups": 236,
+      "num_hrs": 28
+    },
+    {
+      "date": "2025-04-30",
+      "metrics": {
+        "roc_auc": 0.6319283106538335,
+        "pr_auc": 0.11295393817386379,
+        "brier_score": 0.07926776025297193,
+        "best_threshold": 0.009944,
+        "best_f1": 0.1981981981981982,
+        "best_precision": 0.125,
+        "best_recall": 0.4782608695652174
+      },
+      "num_matchups": 285,
+      "num_hrs": 23
+    },
+    {
+      "date": "2025-05-01",
+      "metrics": {
+        "roc_auc": 0.5254120879120879,
+        "pr_auc": 0.08160792685264756,
+        "brier_score": 0.07946255816394948,
+        "best_threshold": 0.008054,
+        "best_f1": 0.1891891891891892,
+        "best_precision": 0.10606060606060606,
+        "best_recall": 0.875
+      },
+      "num_matchups": 198,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-05-02",
+      "metrics": {
+        "roc_auc": 0.6318897637795275,
+        "pr_auc": 0.09501916050665862,
+        "brier_score": 0.05825579156210741,
+        "best_threshold": 0.01,
+        "best_f1": 0.1846153846153846,
+        "best_precision": 0.12244897959183673,
+        "best_recall": 0.375
+      },
+      "num_matchups": 270,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-05-03",
+      "metrics": {
+        "roc_auc": 0.5754751461988303,
+        "pr_auc": 0.11487808932355785,
+        "brier_score": 0.0935743896983373,
+        "best_threshold": 0.00835,
+        "best_f1": 0.22564102564102564,
+        "best_precision": 0.1286549707602339,
+        "best_recall": 0.9166666666666666
+      },
+      "num_matchups": 252,
+      "num_hrs": 24
+    },
+    {
+      "date": "2025-05-04",
+      "metrics": {
+        "roc_auc": 0.49431818181818177,
+        "pr_auc": 0.057305257074605556,
+        "brier_score": 0.05412129918775601,
+        "best_threshold": 0.007088,
+        "best_f1": 0.1195219123505976,
+        "best_precision": 0.06382978723404255,
+        "best_recall": 0.9375
+      },
+      "num_matchups": 291,
+      "num_hrs": 16
+    },
+    {
+      "date": "2025-05-05",
+      "metrics": {
+        "roc_auc": 0.6580611169652265,
+        "pr_auc": 0.14690708121066226,
+        "brier_score": 0.08037674087861005,
+        "best_threshold": 0.01,
+        "best_f1": 0.25531914893617025,
+        "best_precision": 0.17647058823529413,
+        "best_recall": 0.46153846153846156
+      },
+      "num_matchups": 159,
+      "num_hrs": 13
+    },
+    {
+      "date": "2025-05-06",
+      "metrics": {
+        "roc_auc": 0.5010442773600667,
+        "pr_auc": 0.06874522548734532,
+        "brier_score": 0.06896565626683394,
+        "best_threshold": 0.008479,
+        "best_f1": 0.15706806282722513,
+        "best_precision": 0.0872093023255814,
+        "best_recall": 0.7894736842105263
+      },
+      "num_matchups": 271,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-05-07",
+      "metrics": {
+        "roc_auc": 0.5606835619623344,
+        "pr_auc": 0.09526636109378642,
+        "brier_score": 0.061981344109129616,
+        "best_threshold": 0.009906,
+        "best_f1": 0.1951219512195122,
+        "best_precision": 0.12307692307692308,
+        "best_recall": 0.47058823529411764
+      },
+      "num_matchups": 270,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-05-08",
+      "metrics": {
+        "roc_auc": 0.7115384615384615,
+        "pr_auc": 0.08975347069056953,
+        "brier_score": 0.036415470649135806,
+        "best_threshold": 0.01,
+        "best_f1": 0.18604651162790697,
+        "best_precision": 0.10810810810810811,
+        "best_recall": 0.6666666666666666
+      },
+      "num_matchups": 162,
+      "num_hrs": 6
+    },
+    {
+      "date": "2025-05-09",
+      "metrics": {
+        "roc_auc": 0.6618095238095237,
+        "pr_auc": 0.13517824986343663,
+        "brier_score": 0.07614563104969002,
+        "best_threshold": 0.009696,
+        "best_f1": 0.25000000000000006,
+        "best_precision": 0.1566265060240964,
+        "best_recall": 0.6190476190476191
+      },
+      "num_matchups": 271,
+      "num_hrs": 21
+    },
+    {
+      "date": "2025-05-10",
+      "metrics": {
+        "roc_auc": 0.7159455128205129,
+        "pr_auc": 0.173523284461421,
+        "brier_score": 0.09598057066981203,
+        "best_threshold": 0.009714,
+        "best_f1": 0.2826086956521739,
+        "best_precision": 0.19696969696969696,
+        "best_recall": 0.5
+      },
+      "num_matchups": 266,
+      "num_hrs": 26
+    },
+    {
+      "date": "2025-05-11",
+      "metrics": {
+        "roc_auc": 0.5767543859649124,
+        "pr_auc": 0.08938175028092768,
+        "brier_score": 0.06896586404926938,
+        "best_threshold": 0.00955,
+        "best_f1": 0.1941747572815534,
+        "best_precision": 0.11904761904761904,
+        "best_recall": 0.5263157894736842
+      },
+      "num_matchups": 271,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-05-12",
+      "metrics": {
+        "roc_auc": 0.6308641975308642,
+        "pr_auc": 0.14688235938186756,
+        "brier_score": 0.08934062288366666,
+        "best_threshold": 0.009912,
+        "best_f1": 0.2622950819672131,
+        "best_precision": 0.18604651162790697,
+        "best_recall": 0.4444444444444444
+      },
+      "num_matchups": 198,
+      "num_hrs": 18
+    },
+    {
+      "date": "2025-05-13",
+      "metrics": {
+        "roc_auc": 0.5136085626911315,
+        "pr_auc": 0.06790638959711048,
+        "brier_score": 0.06337092388919743,
+        "best_threshold": 0.009339,
+        "best_f1": 0.1616161616161616,
+        "best_precision": 0.09523809523809523,
+        "best_recall": 0.5333333333333333
+      },
+      "num_matchups": 233,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-05-14",
+      "metrics": {
+        "roc_auc": 0.5205761316872428,
+        "pr_auc": 0.1288248634323821,
+        "brier_score": 0.11569503727827776,
+        "best_threshold": 0.007062999999999999,
+        "best_f1": 0.223728813559322,
+        "best_precision": 0.1274131274131274,
+        "best_recall": 0.9166666666666666
+      },
+      "num_matchups": 306,
+      "num_hrs": 36
+    },
+    {
+      "date": "2025-05-15",
+      "metrics": {
+        "roc_auc": 0.5703125,
+        "pr_auc": 0.18630891441879793,
+        "brier_score": 0.12519013543821814,
+        "best_threshold": 0.009759,
+        "best_f1": 0.34782608695652173,
+        "best_precision": 0.25,
+        "best_recall": 0.5714285714285714
+      },
+      "num_matchups": 110,
+      "num_hrs": 14
+    },
+    {
+      "date": "2025-05-16",
+      "metrics": {
+        "roc_auc": 0.5002080299563136,
+        "pr_auc": 0.07079646561688667,
+        "brier_score": 0.06872729184656616,
+        "best_threshold": 0.007951999999999999,
+        "best_f1": 0.1511111111111111,
+        "best_precision": 0.0825242718446602,
+        "best_recall": 0.8947368421052632
+      },
+      "num_matchups": 272,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-05-17",
+      "metrics": {
+        "roc_auc": 0.5266768292682927,
+        "pr_auc": 0.10143064067649424,
+        "brier_score": 0.08745421221712592,
+        "best_threshold": 0.008987,
+        "best_f1": 0.18518518518518517,
+        "best_precision": 0.10869565217391304,
+        "best_recall": 0.625
+      },
+      "num_matchups": 270,
+      "num_hrs": 24
+    },
+    {
+      "date": "2025-05-18",
+      "metrics": {
+        "roc_auc": 0.6050534703292094,
+        "pr_auc": 0.09535841963453784,
+        "brier_score": 0.06918498896935554,
+        "best_threshold": 0.008928,
+        "best_f1": 0.1772151898734177,
+        "best_precision": 0.10071942446043165,
+        "best_recall": 0.7368421052631579
+      },
+      "num_matchups": 270,
+      "num_hrs": 19
+    },
+    {
+      "date": "2025-05-19",
+      "metrics": {
+        "roc_auc": 0.4298295454545455,
+        "pr_auc": 0.05064445389963061,
+        "brier_score": 0.05297170489018817,
+        "best_threshold": 0.0073230000000000005,
+        "best_f1": 0.11392405063291139,
+        "best_precision": 0.060810810810810814,
+        "best_recall": 0.9
+      },
+      "num_matchups": 186,
+      "num_hrs": 10
+    },
+    {
+      "date": "2025-05-20",
+      "metrics": {
+        "roc_auc": 0.5653018916817829,
+        "pr_auc": 0.08540710457708509,
+        "brier_score": 0.06853172352047951,
+        "best_threshold": 0.009340000000000001,
+        "best_f1": 0.19047619047619047,
+        "best_precision": 0.11363636363636363,
+        "best_recall": 0.5882352941176471
+      },
+      "num_matchups": 244,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-05-21",
+      "metrics": {
+        "roc_auc": 0.5928030303030303,
+        "pr_auc": 0.13512877319452032,
+        "brier_score": 0.09253773585721568,
+        "best_threshold": 0.009792,
+        "best_f1": 0.2549019607843137,
+        "best_precision": 0.16666666666666666,
+        "best_recall": 0.5416666666666666
+      },
+      "num_matchups": 255,
+      "num_hrs": 24
+    },
+    {
+      "date": "2025-05-22",
+      "metrics": {
+        "roc_auc": 0.5875,
+        "pr_auc": 0.08339808091320952,
+        "brier_score": 0.06735080571274658,
+        "best_threshold": 0.009012,
+        "best_f1": 0.20253164556962025,
+        "best_precision": 0.11594202898550725,
+        "best_recall": 0.8
+      },
+      "num_matchups": 146,
+      "num_hrs": 10
+    },
+    {
+      "date": "2025-05-23",
+      "metrics": {
+        "roc_auc": 0.6003968253968254,
+        "pr_auc": 0.07255858217058841,
+        "brier_score": 0.05522520536777902,
+        "best_threshold": 0.009381,
+        "best_f1": 0.145985401459854,
+        "best_precision": 0.08196721311475409,
+        "best_recall": 0.6666666666666666
+      },
+      "num_matchups": 267,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-05-24",
+      "metrics": {
+        "roc_auc": 0.6761449967440851,
+        "pr_auc": 0.09791671066170826,
+        "brier_score": 0.058026512222826385,
+        "best_threshold": 0.009182,
+        "best_f1": 0.208,
+        "best_precision": 0.12037037037037036,
+        "best_recall": 0.7647058823529411
+      },
+      "num_matchups": 288,
+      "num_hrs": 17
+    },
+    {
+      "date": "2025-05-25",
+      "metrics": {
+        "roc_auc": 0.513671875,
+        "pr_auc": 0.06323464768978262,
+        "brier_score": 0.054460696974627305,
+        "best_threshold": 0.01,
+        "best_f1": 0.1234567901234568,
+        "best_precision": 0.07575757575757576,
+        "best_recall": 0.3333333333333333
+      },
+      "num_matchups": 271,
+      "num_hrs": 15
+    },
+    {
+      "date": "2025-05-26",
+      "metrics": {
+        "roc_auc": 0.7063281546040167,
+        "pr_auc": 0.12130085838463277,
+        "brier_score": 0.059136091071990735,
+        "best_threshold": 0.01,
+        "best_f1": 0.2222222222222222,
+        "best_precision": 0.14634146341463414,
+        "best_recall": 0.46153846153846156
+      },
+      "num_matchups": 216,
+      "num_hrs": 13
+    },
+    {
+      "date": "2025-05-27",
+      "metrics": {
+        "roc_auc": 0.582766439909297,
+        "pr_auc": 0.10029308290034226,
+        "brier_score": 0.07563569997101832,
+        "best_threshold": 0.009588,
+        "best_f1": 0.1983471074380165,
+        "best_precision": 0.12,
+        "best_recall": 0.5714285714285714
+      },
+      "num_matchups": 273,
+      "num_hrs": 21
+    }
+  ],
+  "overall_metrics": {
+    "roc_auc": 0.59128198629274,
+    "pr_auc": 0.09525731860907752,
+    "brier_score": 0.0714230268728137,
+    "best_threshold": 0.009993,
+    "best_f1": 0.16484607745779542,
+    "best_precision": 0.10895963242533639,
+    "best_recall": 0.3384301732925586
+  },
+  "total_matchups": 13505,
+  "total_hrs": 981,
+  "hr_rate": 0.07263976305072195
+}
