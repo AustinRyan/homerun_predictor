@@ -233,39 +233,39 @@ def homerun_predictions_endpoint(date_str, limit=None):
     # Using names makes it easier to map from game data.
     ballpark_hr_factors = {
         # American League
-        "Yankee Stadium": 1.15,
-        "Fenway Park": 0.90,
-        "Oriole Park at Camden Yards": 0.85,
-        "Tropicana Field": 0.95,  # Corrected Rays' stadium, adjusted factor from 1.10 to 0.95 (pitcher-friendly)
-        "Rogers Centre": 1.00,
-        "Guaranteed Rate Field": 1.05,
-        "Progressive Field": 0.85,
-        "Comerica Park": 0.90,
-        "Kauffman Stadium": 0.95,
-        "Target Field": 1.05,
-        "Daikin Park": 1.10,        # User-specified name for Astros' park (was Minute Maid Park), kept factor 1.10
-        "Sutter Health Park": 1.45, # User-specified name for Athletics' temp park, kept factor 1.20
-        "T-Mobile Park": 0.85,
-        "Globe Life Field": 1.25,
+        "Yankee Stadium": 1.40,            # Increased from 1.15 (very hitter-friendly)
+        "Fenway Park": 0.70,              # Decreased from 0.90 (more pitcher-friendly)
+        "Oriole Park at Camden Yards": 0.65, # Decreased from 0.85 (very pitcher-friendly)
+        "Tropicana Field": 0.75,          # Decreased from 0.95 (more pitcher-friendly)
+        "Rogers Centre": 1.00,            # Neutral park, unchanged
+        "Guaranteed Rate Field": 1.20,    # Increased from 1.05 (more hitter-friendly)
+        "Progressive Field": 0.65,         # Decreased from 0.85 (very pitcher-friendly)
+        "Comerica Park": 0.70,            # Decreased from 0.90 (more pitcher-friendly)
+        "Kauffman Stadium": 0.75,         # Decreased from 0.95 (more pitcher-friendly)
+        "Target Field": 1.20,             # Increased from 1.05 (more hitter-friendly)
+        "Daikin Park": 1.30,              # Increased from 1.10 (more hitter-friendly)
+        "Sutter Health Park": 1.90,        # Increased from 1.45 (extremely hitter-friendly)
+        "T-Mobile Park": 0.65,             # Decreased from 0.85 (very pitcher-friendly)
+        "Globe Life Field": 1.50,          # Increased from 1.25 (very hitter-friendly)
         # National League
-        "Wrigley Field": 0.85,
-        "Great American Ball Park": 1.25,
-        "PNC Park": 0.80,
-        "American Family Field": 1.10,
-        "Busch Stadium": 0.90,
-        "Coors Field": 1.45,
-        "Dodger Stadium": 0.95,
-        "Oracle Park": 0.80,
-        "Petco Park": 0.95,
-        "Chase Field": 1.10,
-        "Citi Field": 1.00,
-        "Citizens Bank Park": 1.15,
-        "Nationals Park": 0.95,
-        "loanDepot park": 0.90, # Formerly Marlins Park
-        "Truist Park": 1.00,
+        "Wrigley Field": 0.65,             # Decreased from 0.85 (very pitcher-friendly)
+        "Great American Ball Park": 1.50,  # Increased from 1.25 (very hitter-friendly)
+        "PNC Park": 0.60,                 # Decreased from 0.80 (extremely pitcher-friendly)
+        "American Family Field": 1.30,     # Increased from 1.10 (more hitter-friendly)
+        "Busch Stadium": 0.70,            # Decreased from 0.90 (more pitcher-friendly)
+        "Coors Field": 2.00,              # Increased from 1.45 (most extreme hitter park)
+        "Dodger Stadium": 0.75,           # Decreased from 0.95 (more pitcher-friendly)
+        "Oracle Park": 0.60,              # Decreased from 0.80 (extremely pitcher-friendly)
+        "Petco Park": 0.75,               # Decreased from 0.95 (more pitcher-friendly)
+        "Chase Field": 1.30,              # Increased from 1.10 (more hitter-friendly)
+        "Citi Field": 1.00,               # Neutral park, unchanged
+        "Citizens Bank Park": 1.40,        # Increased from 1.15 (very hitter-friendly)
+        "Nationals Park": 0.75,           # Decreased from 0.95 (more pitcher-friendly)
+        "loanDepot park": 0.70,           # Decreased from 0.90 (more pitcher-friendly)
+        "Truist Park": 1.00,              # Neutral park, unchanged
         # Add any other parks if necessary, e.g., for London Series, Mexico City Series if they have specific factors
-        "Estadio Alfredo Harp Helú": 1.20, # Example for Mexico City games
-        "London Stadium": 1.10, # Example for London games
+        "Estadio Alfredo Harp Helú": 1.45, # Increased from 1.20 (very hitter-friendly due to altitude)
+        "London Stadium": 1.30,           # Increased from 1.10 (more hitter-friendly)
     }
 
     # Default factor for parks not listed or if venue name is missing/mismatched

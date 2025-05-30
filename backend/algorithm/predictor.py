@@ -2,7 +2,7 @@ import pandas as pd
 
 # Placeholder for more sophisticated configuration or constants
 MIN_PLATE_APPEARANCES_FOR_BATTER_STATS = 125 # Minimum PA for batter stats
-MIN_BATTERS_FACED_FOR_PITCHER_STATS = 30 # Minimum batters faced for overall pitcher stats
+MIN_BATTERS_FACED_FOR_PITCHER_STATS = 0 # Minimum batters faced for overall pitcher stats
 DEFAULT_MIN_BF_PITCHER_SPLITS = 10 # Default min BF for pitcher handedness splits 
 BVP_MIN_PA_FOR_SCORING = 5 # Minimum PAs for BvP stats to be considered in scoring # Minimum PA for a stat to be considered somewhat reliable
 IDEAL_LAUNCH_ANGLE_MIN = 25.0
