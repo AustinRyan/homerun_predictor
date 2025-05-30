@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Baseball ball -->
+  <circle cx="32" cy="32" r="30" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  
+  <!-- Baseball stitches -->
+  <path d="M16,16 C22,22 26,30 26,38 C26,46 22,54 16,60" fill="none" stroke="#d13b40" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48,16 C42,22 38,30 38,38 C38,46 42,54 48,60" fill="none" stroke="#d13b40" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Baseball curved lines -->
+  <path d="M10,32 C10,20 20,10 32,10" fill="none" stroke="#cccccc" stroke-width="1" stroke-linecap="round"/>
+  <path d="M32,54 C20,54 10,44 10,32" fill="none" stroke="#cccccc" stroke-width="1" stroke-linecap="round"/>
+  <path d="M54,32 C54,44 44,54 32,54" fill="none" stroke="#cccccc" stroke-width="1" stroke-linecap="round"/>
+  <path d="M32,10 C44,10 54,20 54,32" fill="none" stroke="#cccccc" stroke-width="1" stroke-linecap="round"/>
+</svg>
