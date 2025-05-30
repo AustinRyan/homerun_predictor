@@ -31,7 +31,7 @@ class NumpyEncoder(json.JSONEncoder):
 import io
 import sys
 from contextlib import redirect_stdout
-# from flask_cors import CORS
+from flask_cors import CORS
 
 # Custom class to capture print statements while still printing to console
 class TeeIO(io.StringIO):
@@ -53,7 +53,7 @@ app = Flask(__name__)
 app.json_encoder = NumpyEncoder  # Use our custom encoder for JSON responses
 
 # Configure CORS to allow requests from Vercel frontend
-# CORS(app, resources={r"/*": {"origins": ["https://homerun-predictor.vercel.app", "http://localhost:3000", "http://localhost:5173"]}})  # Enable CORS for specific origins
+CORS(app, resources={r"/*": {"origins": ["https://homerun-predictor.vercel.app", "http://localhost:3000", "http://localhost:5173"]}})  # Enable CORS for specific origins
 
 def make_json_serializable(data):
     if isinstance(data, dict):
